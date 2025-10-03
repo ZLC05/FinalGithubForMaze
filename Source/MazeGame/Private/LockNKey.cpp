@@ -19,10 +19,7 @@ void ALockNKey::CheckActorType(AActor* OverlappedActor, AActor* OtherActor)
 
 void ALockNKey::OpenTheDoor()
 {
-	if (GEngine) {
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("I have been triggered")));
-		
-	}
+	this->Destroy();
 	
 	
 
