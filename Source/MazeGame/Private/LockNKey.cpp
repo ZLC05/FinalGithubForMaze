@@ -20,9 +20,6 @@ void ALockNKey::CheckActorType(AActor* OverlappedActor, AActor* OtherActor)
 void ALockNKey::OpenTheDoor()
 {
 	this->Destroy();
-	
-	
-
 }
 
 
