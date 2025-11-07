@@ -30,6 +30,12 @@ void AZC_Char::Tick(float DeltaTime)
 void AZC_Char::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	PlayerInputComponent->BindAction(TEXT("Stun"), IE_Pressed, this, &AZC_Char::DoStun);
+}
+
+void AZC_Char::DoStun()
+{
+	//gets all the AI components in a radius and stuns them for a few seconds. On resource for pickups later down the line
 
 }
 
